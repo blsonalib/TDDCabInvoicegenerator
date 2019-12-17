@@ -1,0 +1,2 @@
+?InvoiceSummary{numOfRides=2, totalFare=60.0, averageFare=30.0}
+	?InvoiceSummary{numOfRides=2, totalFare=30.0, averageFare=15.0}
