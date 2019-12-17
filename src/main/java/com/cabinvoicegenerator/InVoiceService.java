@@ -35,11 +35,11 @@ public class InVoiceService {
         return new InvoiceSummary(rides.length, totalFare);
     }
 
-    public void addRides(String userId, Ride[] rides) {
+    public void addRides(String userId, Ride[] rides) throws CabServiceException {
         rideRepository.addRides(userId, rides);
     }
 
-    public InvoiceSummary getInvoiceSummmary(String userId) {
+    public InvoiceSummary getInvoiceSummmary(String userId) throws CabServiceException {
         Ride[] rides = rideRepository.getRides(userId);
         return this.calculateTotalFare(rides);
     }

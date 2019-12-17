@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4f1ed25-49e5-4ec2-b119-1dfff0ee6e8a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cabinvoicegenerator/InVoiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cabinvoicegenerator/InVoiceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cabinvoicegenerator/InvoiceSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cabinvoicegenerator/InvoiceSummary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cabinvoicegenerator/InvoiceServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cabinvoicegenerator/InvoiceServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cabinvoicegenerator/CabServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cabinvoicegenerator/RideRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.cabinvoicegenerator.InvoiceServiceTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.cabinvoicegenerator.InvoiceServiceTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.cabinvoicegenerator.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.cabinvoicegenerator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.cabinvoicegenerator.InvoiceServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.cabinvoicegenerator.InvoiceServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cabinvoicegenerator/RideRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cabinvoicegenerator/RideRepository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.InvoiceServiceTest">
+  <component name="RunManager" selected="Gradle.InvoiceServiceTest.givenUserIdAndRidesForPremium_ShouldReturnInvoiceSummary">
     <configuration name="InvoiceServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -84,12 +101,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="InvoiceServiceTest.givenLessDistanceAndTime_ShouldReturnMinimumFare" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="InvoiceServiceTest.givenDistanceAndTimeForNormal_ShouldReturnTotalFare" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.cabinvoicegenerator.InvoiceServiceTest.givenLessDistanceAndTime_ShouldReturnMinimumFare&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.cabinvoicegenerator.InvoiceServiceTest.givenDistanceAndTimeForNormal_ShouldReturnTotalFare&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -124,12 +141,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="InvoiceServiceTest.givenMultipleRides_ShouldReturnTotalFare" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="InvoiceServiceTest.givenUserIdAndRidesForNormal_ShouldReturnInvoiceSummary" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.cabinvoicegenerator.InvoiceServiceTest.givenMultipleRides_ShouldReturnTotalFare&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.cabinvoicegenerator.InvoiceServiceTest.givenUserIdAndRidesForNormal_ShouldReturnInvoiceSummary&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -144,12 +161,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="InvoiceServiceTest.givenUserIdAndRides_ShouldReturnInvoiceSummary" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="InvoiceServiceTest.givenUserIdAndRidesForPremium_ShouldReturnInvoiceSummary" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.cabinvoicegenerator.InvoiceServiceTest.givenUserIdAndRides_ShouldReturnInvoiceSummary&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.cabinvoicegenerator.InvoiceServiceTest.givenUserIdAndRidesForPremium_ShouldReturnInvoiceSummary&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -166,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.InvoiceServiceTest.givenUserIdAndRidesForPremium_ShouldReturnInvoiceSummary" />
+        <item itemvalue="Gradle.InvoiceServiceTest.givenUserIdAndRidesForNormal_ShouldReturnInvoiceSummary" />
+        <item itemvalue="Gradle.InvoiceServiceTest.givenDistanceAndTimeForNormal_ShouldReturnTotalFare" />
         <item itemvalue="Gradle.InvoiceServiceTest" />
         <item itemvalue="Gradle.InvoiceServiceTest.givenMultipleRides_ShouldReturnInvoiceSummary" />
-        <item itemvalue="Gradle.InvoiceServiceTest.givenUserIdAndRides_ShouldReturnInvoiceSummary" />
-        <item itemvalue="Gradle.InvoiceServiceTest.givenMultipleRides_ShouldReturnTotalFare" />
-        <item itemvalue="Gradle.InvoiceServiceTest.givenLessDistanceAndTime_ShouldReturnMinimumFare" />
       </list>
     </recent_temporary>
   </component>
@@ -210,16 +227,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/cabinvoicegenerator/InvoiceServiceTest.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="6" />
+          <line>9</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/cabinvoicegenerator/InvoiceServiceTest.java</url>
-          <line>45</line>
-          <properties class="com.cabinvoicegenerator.InvoiceServiceTest" method="givenUserIdAndRides_ShouldReturnInvoiceSummary">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
+          <line>39</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/cabinvoicegenerator/InvoiceServiceTest.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

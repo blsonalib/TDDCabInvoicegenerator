@@ -36,7 +36,7 @@ public class InvoiceServiceTest {
     }
 
     @Test
-    public void givenUserIdAndRidesForNormal_ShouldReturnInvoiceSummary() {
+    public void givenUserIdAndRidesForNormal_ShouldReturnInvoiceSummary() throws CabServiceException {
         InVoiceService inVoiceService = new InVoiceService(CabSubscriptionsType.NORMAL);
         String userId = "a@b.com";
         Ride[] rides = {new Ride(2.0, 5),
@@ -80,7 +80,7 @@ public class InvoiceServiceTest {
     }
 
     @Test
-    public void givenUserIdAndRidesForPremium_ShouldReturnInvoiceSummary() {
+    public void givenUserIdAndRidesForPremium_ShouldReturnInvoiceSummary() throws CabServiceException {
         InVoiceService inVoiceService = new InVoiceService(CabSubscriptionsType.PREMIUM);
         String userId = "a@b.com";
         Ride[] rides = {new Ride(2.0, 5),
@@ -89,7 +89,6 @@ public class InvoiceServiceTest {
         inVoiceService.addRides(userId, rides);
         InvoiceSummary summary = inVoiceService.getInvoiceSummmary(userId);
         InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2, 60.0);
-        System.out.println(expectedInvoiceSummary);
         Assert.assertEquals(expectedInvoiceSummary, summary);
     }
 }

@@ -11,14 +11,24 @@ public class RideRepository {
         this.userRides = new HashMap<>();
     }
 
-    public void addRides(String userId,Ride[] rides)
-    {
-        this.userRides.put(userId,new ArrayList<Ride>(Arrays.asList(rides)));
-    }
+    public void addRides(String userId,Ride[] rides) throws CabServiceException{
 
-        public Ride[] getRides(String userId)
-        {
-            return this.userRides.get(userId).toArray(new Ride[0]);
+           if (rides != null) {
+               this.userRides.put(userId, new ArrayList<Ride>(Arrays.asList(rides)));
+           }
+           else{
+                 throw new CabServiceException("You have no ride ",CabServiceException.ExceptionType.RIDE_NOT_FOUND);
+             }
+         }
+
+        public Ride[] getRides(String userId) throws CabServiceException {
+
+                if (userId != null) {
+                    return this.userRides.get(userId).toArray(new Ride[0]);
+                 }
+                else {
+                throw new CabServiceException("You have problem in ID", CabServiceException.ExceptionType.NULL_ID);
+            }
         }
     }
 
